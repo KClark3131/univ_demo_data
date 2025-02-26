@@ -45,10 +45,10 @@ print("Data has been updated and saved to updated_clean_pseo_flows_data.csv")
 
 # LET'S MERGE SOME STUFF!!! 
 # Read the target CSV file
-df1 = pd.read_csv(r"C:\Users\kclar\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.13\pseo_flows_data.csv", dtype={'institution_code': str}, low_memory=False)
+df1 = pd.read_csv(r"YOUR FILE HERE", dtype={'institution_code': str}, low_memory=False)
 
 # Read the key file that maps institution_code to institution_name
-df_key = pd.read_excel(r"C:\Users\kclar\OneDrive\Desktop\Univdata\Data_Univ_by_State\key_dictionaries\institution_key_dictionary.xlsx", dtype={'institution_code': str})
+df_key = pd.read_excel(r"YOUR FILE HEREx", dtype={'institution_code': str})
 
 # Ensure the column names are consistent
 df1.columns = [col.lower() for col in df1.columns]
@@ -86,10 +86,10 @@ merged_df.to_csv('updated_pseo_flows_data.csv', index=False)
 print("The 'institution_name' column has been added next to 'institution_code'.")
 
 # Read the target CSV file
-df1 = pd.read_csv(r"C:\Users\kclar\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.13\updated_pseo_flows_data_with_degree_type.csv", dtype={'cipcode': str}, low_memory=False)
+df1 = pd.read_csv(r"YOUR FILE HERE", dtype={'cipcode': str}, low_memory=False)
 
 # Read the key file that maps cipcode to cip_label
-df_key = pd.read_excel(r"C:\Users\kclar\OneDrive\Desktop\Univdata\Data_Univ_by_State\key_dictionaries\cip_code_key_dictionary.xlsx", dtype={'cipcode': str})
+df_key = pd.read_excel(r"YOUR FILE HERE", dtype={'cipcode': str})
 
 # Ensure the column names are consistent
 df1.columns = [col.lower() for col in df1.columns]
@@ -140,10 +140,10 @@ merged_df.to_csv('updated_pseo_flows_data_with_cip_label.csv', index=False)
 print("The 'cip_label' column has been added and the 'cipcode' column has been relabeled to 'degree_label'.")
 
 # Read the target CSV file
-df1 = pd.read_csv(r"C:\Users\kclar\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.13\updated_pseo_flows_data_with_naics.csv", dtype={'degree_code': str}, low_memory=False)
+df1 = pd.read_csv(r"YOUR FILE HERE", dtype={'degree_code': str}, low_memory=False)
 
 # Read the key file that maps degree_code to degree_type
-df_key = pd.read_excel(r"C:\Users\kclar\OneDrive\Desktop\Univdata\Data_Univ_by_State\key_dictionaries\degree_key_dictionary.xlsx", dtype={'degree_code': str})
+df_key = pd.read_excel(r"YOUR FILE HERE", dtype={'degree_code': str})
 
 # Ensure the column names are consistent
 df1.columns = [col.lower() for col in df1.columns]
@@ -194,10 +194,10 @@ merged_df.to_csv('updated_pseo_flows_data_with_degree_type.csv', index=False)
 print("The 'degree_type' column has been added and the 'degree_code' column has been relabeled to 'degree_type'.")
 
 # Read the target CSV file
-df1 = pd.read_csv(r"C:\Users\kclar\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.13\updated_pseo_flows_data.csv", dtype={'institution_state_code': str}, low_memory=False)
+df1 = pd.read_csv(r"YOUR FILE HERE", dtype={'institution_state_code': str}, low_memory=False)
 
 # Read the key file that maps institution_state_code to institution_state
-df_key = pd.read_excel(r"C:\Users\kclar\OneDrive\Desktop\Univdata\Data_Univ_by_State\key_dictionaries\institution_key_dictionary.xlsx", dtype={'institution_state_code': str})
+df_key = pd.read_excel(r"YOUR FILE HERE", dtype={'institution_state_code': str})
 
 # Ensure the column names are consistent
 df1.columns = [col.lower() for col in df1.columns]
@@ -256,10 +256,10 @@ merged_df.to_csv('updated_pseo_flows_data_with_state.csv', index=False)
 # Print a message indicating the merge is complete
 print("The 'institution_state' column has been added next to 'institution_state_code'.")
 # Read the target CSV file
-df1 = pd.read_csv(r"C:\Users\kclar\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.13\updated_pseo_flows_data_with_state.csv", dtype={'naics_industry_code': str}, low_memory=False)
+df1 = pd.read_csv(r"YOUR FILE HERE", dtype={'naics_industry_code': str}, low_memory=False)
 
 # Read the key file that maps naics_industry_code to naics_industry
-df_key = pd.read_excel(r"C:\Users\kclar\OneDrive\Desktop\Univdata\Data_Univ_by_State\key_dictionaries\naics_codes_key_dictionary.xlsx", dtype={'naics_industry_code': str})
+df_key = pd.read_excel(r"YOUR FILE HERE", dtype={'naics_industry_code': str})
 
 # Ensure the column names are consistent
 df1.columns = [col.lower() for col in df1.columns]
